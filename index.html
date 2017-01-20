@@ -9,92 +9,109 @@
 	</head>
 
 	<body>
-		<h4>Exercise 2 Banking Form</h4>
+		<h3>Exercise 2 Banking Form</h3>
 
 		<form action="javascript:void(0);">
 			<fieldset>
 				<legend>Applicant</legend>
-				<label for="name">First Name</label>
-				<input type="text" name="name" value="">
+				<label for="fname">First Name:</label>
+				<br><input type="text" name="fname" value="">
 
-				<label for="name">Middle Initial</label>
-				<input type="text" name="name" value="">
+				<br><label for="mi">Middle Initial:</label>
+				<br><input type="text" name="mi" value="">
 
-				<label for="name">Last Name</label>
-				<input type="text" name="name" value="">
+				<br><label for="lname">Last Name:</label>
+				<br><input type="text" name="lname" value="">
+				<br><br>
+			</fieldset>
 
-
+			<br>
+			<fieldset>
 				<legend>Address</legend>
-				<label for="name">Street Address</label>
-				<input type="text" name="name" value="">
+				<label for="strAddress">Street Address:</label>
+				<br><input type="text" name="strAddress" value="">
 
-				<label for="name">City</label>
-				<input type="text" name="name" value="">
+				<br><label for="city">City:</label>
+				<br><input type="text" name="city" value="">
 
-				<label for="name">State</label>
-				<input type="text" name="name" value="">
+				<br><label for="state">State:</label>
+				<br><input type="text" name="state" value="">
 
-				<label for="name">Zip</label>
-				<input type="text" name="name" value="">
+				<br><label for="zip">Zip:</label>
+				<br><input type="text" name="zip" value="">
+				<br><br>
+			</fieldset>
 
-
+			<br>
+			<fieldset>
 				<legend>Occupation / Employer</legend>
-				<label for="name">Occupation</label>
-				<input type="text" name="name" value="">
+				<label for="occupation">Occupation:</label>
+				<br><input type="text" name="occupation" value="">
 
-				<label for="name">Employer</label>
-				<input type="text" name="name" value="">
-
-
-				<legend>Employer Address</legend>
-				<label for="name">Street Address</label>
-				<input type="text" name="name" value="">
-
-				<label for="name">City</label>
-				<input type="text" name="name" value="">
-
-				<label for="name">State</label>
-				<input type="text" name="name" value="">
-
-				<label for="name">Zip</label>
-				<input type="text" name="name" value="">
-
-				<h5>Type of Loan:</h5>
-				Commercial<input type="radio" name="loanType" value="Commercial" placeholder="1">
-				Real Estate<input type="radio" name="loanType" value="Real Estate" placeholder="2">
-				Personal<input type="radio" name="loanType" value="Personal" placeholder="3">
-				Mortgage<input type="radio" name="loanType" value="Mortgage" placeholder="4">
+				<br><label for="employer">Employer:</label>
+				<br><input type="text" name="employer" value="">
 
 
-				<legend>Requested Amount of Loan</legend>
-				<label for="name">Street Address</label>
-				<input type="text" name="name" value="">
-				<input type="text" name="name" value="">
+				<br><br><legend><strong>Employer Address</strong></legend>
+				<br><label for="empStreet">Street Address:</label>
+				<br><input type="text" name="empStreet" value="">
 
-				<h5>Loan Length:</h5>
-				5 Years<input type="radio" name="loanLength" value="5 Years" placeholder="1">
-				15 Years<input type="radio" name="loanLength" value="15 Years" placeholder="2">
-				30 Years<input type="radio" name="loanLength" value="30 Years" placeholder="3">
+				<br><label for="empCity">City:</label>
+				<br><input type="text" name="empCity" value="">
 
-				<h5>Special Conditions</h5>
+				<br><label for="empState">State:</label>
+				<br><input type="text" name="empState" value="">
+
+				<br><label for="empZip">Zip:</label>
+				<br><input type="text" name="empZip" value="">
+			</fieldset>
+
+			<br>
+			<fieldset>
+				<legend>Loan Information</legend>
+				Type of Loan:
+				<br><select name="loanType">
+					<option value="comm">Commercial</option>
+					<option value="re">Real Estate</option>
+					<option value="pers">Personal</option>
+					<option value="mort">Mortgage</option>
+				</select>
+
+
+				<br><br><label for="amount">Requested Amount of Loan: </label>
+				$<input type="text" name="amount" value="">
+
+				<br><br>Loan Length:
+				<br><input type="radio" name="loanLength" value="5 Years" placeholder="1">5 Years
+				<br><input type="radio" name="loanLength" value="15 Years" placeholder="2">15 Years
+				<br><input type="radio" name="loanLength" value="30 Years" placeholder="3">30 Years
+
+				<br><br>Special Conditions:
+				<br><input type="checkbox" name="downpayment" value="Down Payment">
 				<label for="downpayment">I have a downpayment</label>
-				<input type="checkbox" name="downpayment" value="Down Payment">
+				<br><input type="checkbox" name="out-of-state" value="Out-of-State">
 				<label for="out-of-state">Out-of-State resident</label>
-				<input type="checkbox" name="out-of-state" value="Out-of-State">
+				<br><input type="checkbox" name="married" value="Married">
 				<label for="married">Married</label>				
-				<input type="checkbox" name="married" value="Married">
+				<br><input type="checkbox" name="cosigned" value="Cosigned">
 				<label for="cosigned">Loan will be co-signed</label>				
-				<input type="checkbox" name="cosigned" value="Cosigned">
 
 			</fieldset>
 
+			<br>
 			<fieldset>				
-				<label for="comments">Comments</label>
-				<textarea name="comments"></textarea>
+				<label for="comments">Additional Comments:</label>
+				<br><textarea name="comments" size="25" maxlength="40"></textarea>
 
-				<input type="email" name="">
-				<input type="tel" name="">
-				<!-- <input type="" name="">   Applicant LinkedIn URL-->
+				<br><label for="email">Email:</label>
+				<br><input type="email" name="email" value="">
+
+				<br><label for="telephone">Phone:</label>
+				<br><input type="tel" name="telephone" value="">
+
+				<br><label for="linkedIn">LinkedIn:</label>
+				<br><input type="text" name="LinkedIn" value="">
+
 
 			</fieldset>
 			<br>
