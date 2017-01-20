@@ -68,32 +68,33 @@
 
 			<br>
 			<fieldset>
-				<h5>Type of Loan:</h5>
-				<input type="radio" name="loanType" value="Commercial" placeholder="1">Commercial
-				<br><input type="radio" name="loanType" value="Real Estate" placeholder="2">Real Estate
-				<br><input type="radio" name="loanType" value="Personal" placeholder="3">Personal
-				<br><input type="radio" name="loanType" value="Mortgage" placeholder="4">Mortgage
+				<legend>Loan Information</legend>
+				Type of Loan:
+				<br><select name="loanType">
+					<option value="comm">Commercial</option>
+					<option value="re">Real Estate</option>
+					<option value="pers">Personal</option>
+					<option value="mort">Mortgage</option>
+				</select>
 
 
-				<legend>Requested Amount of Loan</legend>
-				<label for="name">Street Address</label>
-				<input type="text" name="name" value="">
-				<input type="text" name="name" value="">
+				<br><br><label for="amount">Requested Amount of Loan: </label>
+				$<input type="text" name="amount" value="">
 
-				<h5>Loan Length:</h5>
-				5 Years<input type="radio" name="loanLength" value="5 Years" placeholder="1">
-				15 Years<input type="radio" name="loanLength" value="15 Years" placeholder="2">
-				30 Years<input type="radio" name="loanLength" value="30 Years" placeholder="3">
+				<br><br>Loan Length:
+				<br><input type="radio" name="loanLength" value="5 Years" placeholder="1">5 Years
+				<br><input type="radio" name="loanLength" value="15 Years" placeholder="2">15 Years
+				<br><input type="radio" name="loanLength" value="30 Years" placeholder="3">30 Years
 
-				<h5>Special Conditions</h5>
+				<br><br>Special Conditions:
+				<br><input type="checkbox" name="downpayment" value="Down Payment">
 				<label for="downpayment">I have a downpayment</label>
-				<input type="checkbox" name="downpayment" value="Down Payment">
+				<br><input type="checkbox" name="out-of-state" value="Out-of-State">
 				<label for="out-of-state">Out-of-State resident</label>
-				<input type="checkbox" name="out-of-state" value="Out-of-State">
+				<br><input type="checkbox" name="married" value="Married">
 				<label for="married">Married</label>				
-				<input type="checkbox" name="married" value="Married">
+				<br><input type="checkbox" name="cosigned" value="Cosigned">
 				<label for="cosigned">Loan will be co-signed</label>				
-				<input type="checkbox" name="cosigned" value="Cosigned">
 
 			</fieldset>
 
