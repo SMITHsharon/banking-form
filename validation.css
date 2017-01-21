@@ -1,0 +1,11 @@
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+input:required:valid {
+	background-color: lightgreen;
+}
+
+input:required:invalid {
+	background-color: red;
+}

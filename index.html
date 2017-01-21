@@ -4,8 +4,8 @@
 		<meta charset="utf-8">
 		<meta type="author" content="Sharon Smith">
 		<title>Exercise 2 Banking Form</title>
-		<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Special+Elite"> -->
-		<!-- <style type="text/css" media="screen"> -->
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    	<link rel="stylesheet" type="text/css" href="validation.css">
 	</head>
 
 	<body>
@@ -79,7 +79,7 @@
 
 
 				<br><br><label for="amount">Requested Amount of Loan: </label>
-				$<input type="text" name="amount" value="">
+				$<input type="number" name="amount" min="0" value="">
 
 				<br><br>Loan Length:
 				<br><input type="radio" name="loanLength" value="5 Years" placeholder="1">5 Years
@@ -104,13 +104,13 @@
 				<br><textarea name="comments" size="25" maxlength="40"></textarea>
 
 				<br><label for="email">Email:</label>
-				<br><input type="email" name="email" value="">
+				<br><input type="email" name="email" required placeholder="Enter a valid email address">
 
 				<br><label for="telephone">Phone:</label>
-				<br><input type="tel" name="telephone" value="">
+				<br><input type="tel" name="telephone">
 
 				<br><label for="linkedIn">LinkedIn:</label>
-				<br><input type="text" name="LinkedIn" value="">
+				<br><input type="url" name="LinkedIn" required pattern="https?://.+">
 
 
 			</fieldset>
