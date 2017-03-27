@@ -5,7 +5,7 @@ This assignment displays a form that accepts a loan application.
 ![Banking Form Screengrab](https://raw.githubusercontent.com/SMITHsharon/banking-form/master/screens/screen%20image%20of%20banking%20form.png)
 
 ### Project Specs
-The form must include the following fields: 
+The form includes the following fields: 
 
 1. Applicant first name
 2. Applicant middle initial
@@ -36,7 +36,7 @@ The form must include the following fields:
 
 
 ### Technologies Used
-- html
+- `html`
 
 
 ### How To View The Blog 
