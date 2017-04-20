@@ -45,7 +45,7 @@ The form includes the following fields:
 git clone https://github.com/SMITHsharon/banking-form.git
 cd banking-form
 http-server -p 8080
-This will show in your browser at: `http://localhost:8080`
+This will show in your browser at: http://localhost:8080
 ```
 
 
